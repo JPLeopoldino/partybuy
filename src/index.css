@@ -1,10 +1,33 @@
 body {
     margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 40px;
+  }
+  
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 100px;
+    border: 16.5px solid #FFF;
+    /* border-top: 15px solid #FFF; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
 .hello {
-    font-family: "Century Gothic";
-    width: 500px;
-    margin: 70px auto;
-    text-align: center;
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }

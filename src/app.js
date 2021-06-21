@@ -1,4 +1,6 @@
 import React from 'react';
+import MainBuyScreen from './screens/MainBuyScreen';
+import { BalloonProvider } from './hooks/BalloonProvider';
 
 export default class App extends React.Component {
     dummy = () => {
@@ -7,12 +9,10 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div className={'hello'}>
-                <h2>Hello Electrate</h2>
-                <img src="./assets/logo.png" />
-                <h4>A basic Electron + React.js template</h4>
-                <h4>Have Fun!</h4>
-            </div>
+            // <div className={'hello'}>
+            <BalloonProvider>
+                <MainBuyScreen logo={"./assets/partybuy-logo.png"} />
+            </BalloonProvider>
         );
     }
 }
