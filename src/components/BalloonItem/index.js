@@ -13,7 +13,10 @@ const BalloonItem = ({ balloon }) => {
                 <SC.Image src={balloon.image + '.png'} />
             </SC.ImageContainer>
             <SC.Title>{balloon.name}</SC.Title>
-            <SC.Price>Preço {balloon.price}</SC.Price>
+            <SC.PriceContainer>
+                <SC.PriceLabel>Preço</SC.PriceLabel>
+                <SC.Price>R${balloon.price}</SC.Price>
+            </SC.PriceContainer>
         </SC.Container>
     );
 }

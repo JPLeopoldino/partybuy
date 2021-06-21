@@ -43,11 +43,27 @@ export const Image = styled.img`
 export const Title = styled.p`
     font-size: 18px;
     font-weight: 700;
-    margin: 15px 0 5px 35px;
+    margin: 15px 0 5px 45px;
+`;
+
+export const PriceContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 0 0 50px 45px;
+`;
+
+export const PriceLabel = styled.p`
+    font-size: 14px;
+    color: ${colors.dark_gray};
+    margin: 0;
+    margin-right: 5px;
 `;
 
 export const Price = styled.p`
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
     color: ${colors.dark_gray};
-    margin: 0 0 50px 35px;
+    margin: 0;
 `;

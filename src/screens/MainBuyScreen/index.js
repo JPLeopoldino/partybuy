@@ -554,7 +554,7 @@ const MainBuyScreen = ({ logo }) => {
                 {
                     balloons.map((item) => {
                         return(
-                            <ProductDescriptionImage balloon={item} />
+                            <ProductDescriptionImage balloon={item} key={item.id.toString()} />
                         )
                     })
                 }

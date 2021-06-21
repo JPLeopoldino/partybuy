@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../styles/colors";
 
 export const Container = styled.div`
-
+    position: relative;
 `;
 
 export const ImageContainer = styled.div`
@@ -10,6 +10,19 @@ export const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+export const DescriptionText = styled.p`
+    position: absolute;
+    z-index: 1;
+    font-size: 64px;
+    font-weight: bold;
+    left: 470px;
+    top: 0;
+    width: 650px;
+    text-align: left;
+    color: #000;
+    line-height: 100px;
 `;
 
 export const Image = styled.img`
